@@ -38,7 +38,7 @@ jobs:
         shell: Rscript {0}
         run: |
           options(renv.config.cache.symlinks = FALSE)
-          options(renv.config.pak.enabled = TRUE)
+          options(install.opts = "--no-test-load")
           renv::restore(clean = TRUE)
 
       - name: Setup Node
