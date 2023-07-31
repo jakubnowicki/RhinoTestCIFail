@@ -77,7 +77,7 @@ jobs:
 
       - name: Run Cypress end-to-end tests
         if: always()
-        uses: cypress-io/github-action@v5
+        uses: cypress-io/github-action@v2
         with:
           working-directory: .rhino # Created by earlier commands which use Node.js
           start: npm run run-app
